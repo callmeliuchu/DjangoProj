@@ -15,13 +15,13 @@
     </form>
     <table>
     <tbody>
-	{%for event in events%}
+	{%for guest in guest_list%}
 	 <tr>
-	   <td>{{event.id}}</td>
-	   <td>{{event.name}}</td>
-	   <td>{{event.status}}</td>
-	   <td>{{event.address}}</td>
-	   <td>{{event.start_time}}</td>
+	   <td>{{guest.id}}</td>
+	   <td>{{guest.realname}}</td>
+	   <td>{{guest.phone}}</td>
+	   <td>{{guest.email}}</td>
+	   <td>{{guest.event}}</td>
 	 </tr>
 	{%endfor%}
 	</tbody>
